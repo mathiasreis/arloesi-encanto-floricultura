@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  max-width: 963px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#cover-home {
+  /*width: 963px;*/
+  height: 336px;
+  background: center
+    url(https://cdn.pixabay.com/photo/2021/10/04/11/20/cosmos-6680031_1280.jpg);
+}
+
+#cover-festival {
+  /*width: 963px;*/
+  height: 336px;
+  background: center
+    url(https://cdn.pixabay.com/photo/2018/03/22/19/28/tulips-3251588_1280.jpg);
+}
+
+#cover-destaques {
+ /*width: 963px;*/
+  height: 336px;
+  background: center
+    url(https://cdn.pixabay.com/photo/2016/01/19/14/57/bouquet-of-flowers-1149099_1280.jpg);
+}
+
+.menu-container {
+  /*width: 960px;*/
+  height: 72px;
+  line-height: 72px;
+  background-color: rgb(192, 215, 223);
+  margin: 0 auto;
+  color: rgb(202, 57, 202);
+  border: 1px solid black;
+}
+
+ul.menu {
+  text-align: center; /* centraliza o menu na horizontal 
+  list-style: none;*/
+}
+
+ul.menu li {
+  display: inline-block; /* centraliza e coloca lado a lado os elementos do menu na horizontal */
+}
+
+ul.menu li a {
+  color: rgb(202, 57, 202);
+  /*height: 72px;
+  display: inline-block;*/
+  padding: 25px;
+}
+
+ul.menu li a:visited {
+  color: rgb(202, 57, 202);
+}
+
+ul.menu li a:hover {
+  background-color: rgb(173, 103, 173);
+  color: white;
+}
+
+.principal {
+  text-align: center;
+  background-color: rgb(216, 231, 236);
+  padding: 40px 0px;
+}
+
+.principal h1 {
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+
+.principal h2 {
+  font-size: 50px;
+  padding: 40px 40px 5px 40px;
+}
+
+.principal p {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 80%;
+}
+/*
+[class^="box-"] {
+  background-color: skyblue;
+
+ To place the letter at the center 
+  display: grid;
+  place-items: center;
+
+  .container {
+  display: grid;
+  gap: 20px;
+}
+}*/
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.destaques {
+  display: grid;
+  place-items: center;
+  
+}
+
+.flor-imagem{
+  width: 50%;
+  height: auto;
+}
+
+.rodape {
+  /*width: 960px;*/
+  height: 72px;
+  line-height: 72px;
+  background-color: rgb(192, 215, 223);
+  text-align: center;
+  font-weight: bold;
+  color: rgb(202, 57, 202);
+  border: 1px solid black;
+}
